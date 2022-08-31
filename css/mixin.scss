@@ -1,0 +1,21 @@
+@mixin bordered($width, $color) {
+    border: $width solid $color;
+}
+
+@mixin button-bc($color) {
+    background-color: $color;
+}
+
+@mixin button-fc($color) {
+    color: $color;
+}
+
+@mixin button-size($width, $height) {
+    width: $width;
+    height: $height;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}

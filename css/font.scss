@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'YuGo-Bold';
+    src: url(../fonts/yugothib.ttf);
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'A-OTF Shin Go Pro M';
+    font-style: normal;
+    font-weight: normal;
+    src: local('A-OTF Shin Go Pro M'), url('../fonts/AOTFShinGoProMedium.woff') format('woff');
+}

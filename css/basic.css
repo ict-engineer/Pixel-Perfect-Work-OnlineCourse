@@ -1,0 +1,561 @@
+@charset "UTF-8";
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-size: cover;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+button,
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+a:hover,
+button:hover input:hover {
+  cursor: pointer;
+}
+
+a:hover,
+a:focus,
+a:active {
+  outline: none;
+  text-decoration: none;
+}
+
+input {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+select,
+input,
+button {
+  outline: none;
+  background-color: transparent;
+  border-width: 0px;
+  overflow: hidden;
+}
+
+button:active,
+input:hover,
+input:focus,
+input:active {
+  outline: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+ul {
+  list-style: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* define primary colors */
+/* use the variables */
+@font-face {
+  font-family: 'YuGo-Bold';
+  src: url(../fonts/yugothib.ttf);
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'A-OTF Shin Go Pro M';
+  font-style: normal;
+  font-weight: normal;
+  src: local("A-OTF Shin Go Pro M"), url("../fonts/AOTFShinGoProMedium.woff") format("woff");
+}
+
+.contain {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+body {
+  color: #363636;
+}
+
+.c-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-flex-jc {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-flex-ja {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.c-flex-jb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-flex-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.c-align-self-c {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.c-align-self-e {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.c-align-items-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button--contact {
+  background-color: #FFF94C;
+  width: 374px;
+  height: 72px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  color: #3567BE;
+  border: 2px solid #FFF94C;
+}
+
+.button--red,
+.button--contact {
+  position: relative;
+}
+
+.button--contact {
+  z-index: 10;
+}
+
+.button--contact img {
+  width: 33px;
+  margin-right: 20px;
+}
+
+.button--contact .hover {
+  display: none;
+}
+
+.button--contact:hover .sub {
+  display: none;
+}
+
+.button--contact:hover .hover {
+  display: block;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.button--contact:hover {
+  background-color: #3567BE;
+  color: #FFF94C;
+  border: 2px solid #3567BE;
+}
+
+.button--red {
+  background-color: #DB0000;
+  width: 460px;
+  height: 86px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  color: white;
+  border: 2px solid #DB0000;
+}
+
+.button-middle {
+  margin: 53px auto 65px;
+}
+
+.back-decor span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(10%, #FFF94C));
+  background: linear-gradient(to bottom, transparent 30%, #FFF94C 10%);
+}
+
+#stickybtn {
+  background-color: #FFF94C;
+  color: #3567BE;
+  border: 2px solid #3567BE;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  display: none;
+  position: fixed;
+  font-size: 15px;
+  font-family: 'YuGo-Bold';
+  bottom: 100px;
+  right: 100px;
+  z-index: 10000;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 15px;
+}
+
+#stickybtn span {
+  position: relative;
+}
+
+#stickybtn span::before {
+  content: '△';
+  display: block;
+  font-size: 40px;
+  line-height: 1;
+}
+
+#stickybtn:hover {
+  background-color: #3567BE;
+  color: #FFF94C;
+  border: 2px solid #FFF94C;
+}
+
+.art-res-768,
+.art-res-576,
+.art-res-360 {
+  display: none;
+}
+
+.fc-bluedark {
+  color: #3567BE;
+}
+
+.fc-black {
+  color: #363636;
+}
+
+.ff-yogo-b {
+  font-family: 'YuGo-Bold';
+}
+
+.ff-shin-m {
+  font-family: 'A-OTF Shin Go Pro M';
+}
+
+.ff-yogo-m {
+  font-family: ym;
+}
+
+span.red {
+  color: #DB0000 !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.custom-control-label::before {
+  top: 2px;
+  left: -21px;
+  width: 17px;
+  height: 17px;
+}
+
+.custom-control-label::after {
+  top: 2px;
+  left: -21px;
+  width: 17px;
+  height: 17px;
+}
+
+.font-11 {
+  font-size: 11px;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-13 {
+  font-size: 13px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-15 {
+  font-size: 15px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-17 {
+  font-size: 17px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-21 {
+  font-size: 21px;
+}
+
+.font-22 {
+  font-size: 22px;
+}
+
+.font-23 {
+  font-size: 23px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.font-25 {
+  font-size: 25px;
+}
+
+.font-26 {
+  font-size: 26px;
+}
+
+.font-27 {
+  font-size: 27px;
+}
+
+.font-28 {
+  font-size: 28px;
+}
+
+.font-29 {
+  font-size: 29px;
+}
+
+.font-30 {
+  font-size: 30px;
+}
+
+.font-31 {
+  font-size: 31px;
+}
+
+.font-32 {
+  font-size: 32px;
+}
+
+.font-33 {
+  font-size: 33px;
+}
+
+.font-34 {
+  font-size: 34px;
+}
+
+.font-35 {
+  font-size: 35px;
+}
+
+.font-36 {
+  font-size: 36px;
+}
+
+.font-38 {
+  font-size: 38px;
+}
+
+.font-40 {
+  font-size: 40px;
+}
+
+.font-41 {
+  font-size: 41px;
+}
+
+.font-45 {
+  font-size: 45px;
+}
+
+.font-46 {
+  font-size: 46px;
+}
+
+.font-47 {
+  font-size: 47px;
+}
+
+.font-48 {
+  font-size: 48px;
+}
+
+.font-49 {
+  font-size: 49px;
+}
+
+.font-53 {
+  font-size: 53px;
+}
+
+.font-56 {
+  font-size: 56px;
+}
+
+.font-61 {
+  font-size: 61px;
+}
+
+.font-73 {
+  font-size: 73px;
+}
+
+.font-96 {
+  font-size: 96px;
+}
+
+@media only screen and (max-width: 768px) {
+  .art-res-768 {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .art-res-576 {
+    display: block;
+  }
+  .button--contact {
+    width: 309px;
+    height: 58px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+  }
+  .button--contact img {
+    width: 28px;
+    margin-right: 10px;
+  }
+  .button--contact span {
+    font-size: 20px;
+  }
+  .button--red {
+    width: 305px;
+    height: 57px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+  }
+  .button--red span {
+    font-size: 20px;
+  }
+  .button-middle {
+    margin: 23px auto 25px;
+  }
+  #stickybtn {
+    font-size: 10px;
+    bottom: 129px;
+    right: 13px;
+    width: 67px;
+    height: 67px;
+    padding-top: 9px;
+  }
+  #stickybtn span::before {
+    font-size: 27px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .art-res-360 {
+    display: block;
+  }
+  .button--contact,
+  .button--red {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=basic.css.map */

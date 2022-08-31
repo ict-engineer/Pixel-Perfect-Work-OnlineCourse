@@ -1,0 +1,416 @@
+@import "normalize";
+@import "variable";
+@import "mixin";
+@import "font";
+.contain {
+    max-width: $max-width;
+    margin: 0px auto;
+}
+
+body {
+    color: $black;
+}
+
+.c-flex {
+    display: flex;
+}
+
+.c-flex-jc {
+    justify-content: center;
+}
+
+.c-flex-ja {
+    justify-content: space-around;
+}
+
+.c-flex-jb {
+    justify-content: space-between;
+}
+
+.c-flex-c {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-align-self-c {
+    align-self: center;
+}
+
+.c-align-self-e {
+    align-self: flex-end;
+}
+
+.c-align-items-c {
+    align-items: center;
+}
+
+.button--contact {
+    @include button-bc($color: $yellow);
+    @include button-size(374px, 72px);
+    @include button-fc($color: $bluedark);
+    @include bordered(2px, $yellow);
+}
+
+.button--red,
+.button--contact {
+    position: relative;
+}
+
+.button--contact {
+    z-index: 10;
+    img {
+        width: 33px;
+        margin-right: 20px;
+    }
+    .hover {
+        display: none;
+    }
+    &:hover .sub {
+        display: none;
+    }
+    &:hover .hover {
+        display: block;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    }
+    &:hover {
+        @include button-bc($color: $bluedark);
+        @include button-fc($color: $yellow);
+        @include bordered(2px, $bluedark);
+    }
+}
+
+.button--red {
+    @include button-bc($color: $red);
+    @include button-size(460px, 86px);
+    @include button-fc($color: white);
+    @include bordered(2px, $red);
+}
+
+.button-middle {
+    margin: 53px auto 65px;
+}
+
+.back-decor span {
+    background: linear-gradient(to bottom, transparent 30%, $yellow 10%);
+}
+
+#stickybtn {
+    @include button-bc($color: $yellow);
+    @include button-fc($color: $bluedark);
+    @include bordered(2px, $bluedark);
+    @include button-size(100px, 100px);
+    display: none;
+    position: fixed;
+    font-size: 15px;
+    font-family: 'YuGo-Bold';
+    bottom: 100px;
+    right: 100px;
+    z-index: 10000;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 15px;
+    span {
+        position: relative;
+        &::before {
+            content: '△';
+            display: block;
+            font-size: 40px;
+            line-height: 1;
+        }
+    }
+    &:hover {
+        @include button-bc($color: $bluedark);
+        @include button-fc($color: $yellow);
+        @include bordered(2px, $yellow);
+    }
+}
+
+.art-res-768,
+.art-res-576,
+.art-res-360 {
+    display: none;
+}
+
+.fc-bluedark {
+    color: $bluedark;
+}
+
+.fc-black {
+    color: $black;
+}
+
+.ff-yogo-b {
+    font-family: 'YuGo-Bold';
+}
+
+.ff-shin-m {
+    font-family: 'A-OTF Shin Go Pro M';
+}
+
+.ff-yogo-m {
+    font-family: ym;
+}
+
+span.red {
+    color: $red !important;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+// △
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    // background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.custom-control-label::before {
+    top: 2px;
+    left: -21px;
+    width: 17px;
+    height: 17px;
+}
+
+.custom-control-label::after {
+    // content : '✔';
+    top: 2px;
+    left: -21px;
+    width: 17px;
+    height: 17px;
+}
+
+.font-11 {
+    font-size: 11px;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.font-13 {
+    font-size: 13px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-15 {
+    font-size: 15px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-17 {
+    font-size: 17px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-21 {
+    font-size: 21px;
+}
+
+.font-22 {
+    font-size: 22px;
+}
+
+.font-23 {
+    font-size: 23px;
+}
+
+.font-24 {
+    font-size: 24px;
+}
+
+.font-25 {
+    font-size: 25px;
+}
+
+.font-26 {
+    font-size: 26px;
+}
+
+.font-27 {
+    font-size: 27px;
+}
+
+.font-28 {
+    font-size: 28px;
+}
+
+.font-29 {
+    font-size: 29px;
+}
+
+.font-30 {
+    font-size: 30px;
+}
+
+.font-31 {
+    font-size: 31px;
+}
+
+.font-32 {
+    font-size: 32px;
+}
+
+.font-33 {
+    font-size: 33px;
+}
+
+.font-34 {
+    font-size: 34px;
+}
+
+.font-35 {
+    font-size: 35px;
+}
+
+.font-36 {
+    font-size: 36px;
+}
+
+.font-38 {
+    font-size: 38px;
+}
+
+.font-40 {
+    font-size: 40px;
+}
+
+.font-41 {
+    font-size: 41px;
+}
+
+.font-45 {
+    font-size: 45px;
+}
+
+.font-46 {
+    font-size: 46px;
+}
+
+.font-47 {
+    font-size: 47px;
+}
+
+.font-48 {
+    font-size: 48px;
+}
+
+.font-49 {
+    font-size: 49px;
+}
+
+.font-53 {
+    font-size: 53px;
+}
+
+.font-56 {
+    font-size: 56px;
+}
+
+.font-61 {
+    font-size: 61px;
+}
+
+.font-73 {
+    font-size: 73px;
+}
+
+.font-96 {
+    font-size: 96px;
+}
+
+@media only screen and (max-width: 768px) {
+    .art-res-768 {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .art-res-576 {
+        display: block;
+    }
+    .button--contact {
+        @include button-size(309px, 58px);
+        img {
+            width: 28px;
+            margin-right: 10px;
+        }
+        span {
+            font-size: 20px;
+        }
+    }
+    .button--red {
+        @include button-size(305px, 57px);
+        span {
+            font-size: 20px;
+        }
+    }
+    .button-middle {
+        margin: 23px auto 25px;
+    }
+    #stickybtn {
+        font-size: 10px;
+        bottom: 129px;
+        right: 13px;
+        width: 67px;
+        height: 67px;
+        padding-top: 9px;
+        span {
+            &::before {
+                font-size: 27px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .art-res-360 {
+        display: block;
+    }
+    .button--contact,
+    .button--red {
+        width: 100%;
+    }
+}
